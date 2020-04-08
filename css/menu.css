@@ -1,0 +1,371 @@
+/* Resets for Demo 
+
+------------------------------------------------- */
+
+html { 
+
+	-webkit-text-size-adjust: 100%; 
+
+	-ms-text-size-adjust: 100%; 
+
+}
+
+
+
+.clear:before,.clear:after{content:'';display:table; }
+
+.clear:after{clear:both;}
+
+.clear{zoom:1;}
+
+
+
+/* Start Menu Styling 
+
+--------------------------------------------- */
+
+
+
+.nav{ 
+
+	height:37px; 
+
+	position:relative; 
+
+	z-index:999;
+
+	float: right;
+
+}
+
+
+
+
+
+.nav ul, 
+
+.nav ol, 
+
+.nav dl, 
+
+.nav li { 
+
+	line-height:1.5em;
+
+	list-style:none; 
+
+}
+
+
+
+/* Hide responsive menu trigger 
+
+--------------------------------------------- */
+
+.menu-icon { display:none; }
+
+
+
+/* Start dropdown menu styling 
+
+--------------------------------------------- */
+
+ul.dropdown,
+
+ul.dropdown li,
+
+ul.dropdown ul { 
+
+	margin: 0; 
+
+	padding: 0; 
+
+	
+
+}
+
+
+
+ul.dropdown{
+
+	float:left;
+
+	width:100%; 
+
+	position: relative; 
+
+}
+
+
+
+ul.dropdown li { 
+
+	float: left; 
+
+	vertical-align: middle; 
+
+	zoom: 1; /* IE6 */
+
+}
+
+
+
+/* General list styling 
+
+-------------------------------------------- */
+
+ul.dropdown li {  
+
+	font-size:18px; 
+
+	text-transform:uppercase; 
+
+	font-weight:500;
+
+	font-family: 'MyriadWebPro';
+
+}
+
+
+
+/* General links styling 
+
+-------------------------------------------- */
+
+ul.dropdown a,
+
+ul.dropdown a:visited,	
+
+ul.dropdown a:hover, 		
+
+ul.dropdown a:active { 
+
+	text-decoration: none; 
+
+}
+
+
+
+ul.dropdown a, 
+
+ul.dropdown span { 
+
+	display: block;
+
+	outline:none; 
+
+	cursor:pointer; 
+
+	padding:4px 30px; 
+
+}
+
+
+
+ul.dropdown ul a,
+
+ul.dropdown ul span {  
+
+	padding: 8px 17px;  
+
+}	
+
+
+
+ul.dropdown li:hover, 
+
+ul.dropdown li.hover { 
+
+	position: relative; 
+
+	cursor:pointer; 
+
+}
+
+
+
+/* Level I+ 
+
+--------------------------------------- */
+
+ul.dropdown ul { 
+
+	display:none; 
+
+	position:absolute;
+
+	z-index: 598;
+
+	width: 220px; 
+
+	top: 100%; 
+
+	left: 0; 
+
+}
+
+
+
+ 
+/*
+ul.dropdown li:hover > ul{ 
+
+	display:block;
+
+}*/
+
+
+
+ul.dropdown ul li { 
+
+	float: none;
+
+	font-size:13px;
+
+	font-weight: normal; 
+
+	text-transform:none;
+
+	position:relative; 
+
+}
+
+
+
+ul.dropdown ul li.hover, 
+
+ul.dropdown ul li:hover { /* background-color:#3498DB; color: #fff; */ }
+
+ul.dropdown ul li a:hover { /* color: #fff; */ }
+
+	
+
+/* Level II +  
+
+---------------------------------------- */
+
+ul.dropdown ul ul { top:0; left:100%; }
+
+
+
+
+
+/* Add trailing arrows 
+
+---------------------------------------- */	
+
+ul.dropdown *.sub { 
+
+	padding-right:19px; 
+
+	background-image: url(../images/nav-arrow-down-thin.gif); 
+
+	background-position: 95% 50%; 
+
+	background-repeat: no-repeat; 
+
+}
+
+
+
+ul.dropdown ul *.sub { 
+
+	padding-right: 15px; 
+
+	background-image: url(../images/nav-arrow-right-thin.gif);
+
+	background-position: 100% 50%; 									  
+
+	background-repeat: no-repeat; 
+
+}
+
+
+
+/* Change trailing arrows on :hover IE7+
+
+--------------------------------------------------------- */
+
+ul.dropdown li.sub:hover{  background-image: url(../images/nav-arrow-down.gif); } 
+
+ul.dropdown ul li.sub:hover{ background-image: url(../images/nav-arrow-right.gif);  }
+
+
+
+/* Main menu seperator 
+
+---------------------------------------------- */																		  								  
+
+ul.dropdown li.divider{ 
+
+	padding:0!important; 
+
+	margin:0!important; 
+
+	border:0!important;
+
+	display:block; 
+
+	height:49px; 
+
+	float:left;
+
+	width:1px; 
+
+}
+
+
+
+ul.dropdown li.rtl ul { position: absolute; top: 100%; right:0; z-index: 598; left:auto; }
+
+ul.dropdown li.rtl ul ul { top:0; right:100%; left:auto; }
+
+ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; right:auto!important; }
+
+
+
+/* Theme settings - Change your menu colors, bgcolors, border-colors
+
+---------------------------------------------------------------------- */
+
+
+
+/* Theme Color*/
+
+/*first level*/
+
+.dnt3-menu, 
+
+.dnt3-menu ul.dropdown {}
+
+.dnt3-menu ul.dropdown li:hover{}
+
+.dnt3-menu ul.dropdown li a{color: #979797;}
+
+.dnt3-menu ul.dropdown a:visited,	
+
+.dnt3-menu ul.dropdown a:hover, 		
+
+.dnt3-menu ul.dropdown a.active{background:#ffffff;color:#979797;border-bottom:2px solid #979797; } 
+
+/*second level*/
+
+.dnt3-menu ul.dropdown ul {}
+
+.dnt3-menu ul.dropdown ul li{}
+
+.dnt3-menu ul.dropdown ul li a{border:none !important;}
+
+.dnt3-menu ul.dropdown ul li a{color: #979797;text-transform:uppercase;}
+
+.dnt3-menu ul.dropdown ul li a:hover{color:#004870;}
+
+.dnt3-menu ul.dropdown li.divider{ background:#3399FF;}
+
+
+
+
+
+
+
+
